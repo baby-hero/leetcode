@@ -1,3 +1,6 @@
+/*
+ * https://leetcode.com/problems/happy-number/description/
+ */
 function isHappy(n: number): boolean {
     let nums_set = new Set<number>();
     nums_set.add(n);
