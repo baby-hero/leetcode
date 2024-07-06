@@ -7,8 +7,8 @@ class ListNode {
     val: number
     next: ListNode | null
     constructor(val?: number, next?: ListNode | null) {
-        this.val = (val===undefined ? 0 : val)
-        this.next = (next===undefined ? null : next)
+        this.val = (val === undefined ? 0 : val)
+        this.next = (next === undefined ? null : next)
     }
 }
 
@@ -40,5 +40,7 @@ function mergeNodes(head: ListNode | null): ListNode | null {
 };
 
 console.log(mergeNodes(
-    new ListNode(0, new ListNode(3, new ListNode(1,  new ListNode(0,  new ListNode(4,  new ListNode(5,  new ListNode(2,  new ListNode(0)))))))))
-);;
+    new ListNode(0, new ListNode(3, new ListNode(1, new ListNode(0, new ListNode(4, new ListNode(5, new ListNode(2, new ListNode(0)))))))))
+);
+
+export { ListNode };
